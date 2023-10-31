@@ -1,12 +1,11 @@
-import React from 'react';
-import Icon from '../Icon/index';
+import Icon from '../Icon';
 import './style.css';
 
-const Option = (props) => {
+const Option = ({text, type}) => {
   return (
     <div className="option">
-      <Icon type={props.type} />
-      <div>{props.text}</div>
+      <Icon type={type} />
+      <div>{text}</div>
     </div>
   );
 };

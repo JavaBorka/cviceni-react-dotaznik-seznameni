@@ -1,14 +1,13 @@
-import React from 'react';
-import QuestionBody from '../QuestionBody/index';
-import Option from '../Option/index';
+import QuestionBody from '../QuestionBody';
+import Option from '../Option';
 import './style.css';
 
-const Question = (props) => {
+const Question = ({text}) => {
   return (
     <div className="question">
       <QuestionBody 
         iconType="symbolQuestion" 
-        text={props.text}
+        text={text}
       />
       <div className="question__options">
         <Option type="smileyStrongYes" text="Souhlasím"/>

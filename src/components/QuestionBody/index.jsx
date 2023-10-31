@@ -1,14 +1,13 @@
-import React from 'react';
-import Icon from '../Icon/index';
+import Icon from '../Icon';
 import './style.css';
 
-const QuestionBody = (props) => {
+const QuestionBody = ({text, iconType}) => {
   return (
     <div className="question__body">
       <p className="question__text">
-        {props.text}
+        {text}
       </p>
-      <Icon type={props.iconType} />
+      <Icon type={iconType} />
     </div>
   );
 };
