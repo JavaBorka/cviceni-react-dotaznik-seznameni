@@ -1,8 +1,12 @@
 import QuestionBody from '../QuestionBody';
 import Option from '../Option';
 import './style.css';
+import { useState } from 'react';
 
 const Question = ({text}) => {
+
+  const [answered, setAnswered] = useState(false)
+
   return (
     <div className="question">
       <QuestionBody 
