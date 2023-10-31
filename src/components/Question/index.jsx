@@ -5,16 +5,16 @@ import { useState } from 'react';
 
 const Question = ({text}) => {
 
-  const [answered, setAnswered] = useState(false)
+  const [answer, setAnswer] = useState('symbolQuestion')
 
-  const handleSelect = () => {
-    setAnswered(!answered)
+  const handleSelect = (iconType) => {
+    setAnswer(iconType)
   }
 
   return (
     <div className="question">
       <QuestionBody 
-        iconType={!answered ? 'symbolQuestion' : 'symbolTick' } 
+        iconType={answer} 
         text={text}
       />
       <div className="question__options">

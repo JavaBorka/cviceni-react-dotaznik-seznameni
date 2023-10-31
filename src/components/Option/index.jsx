@@ -6,7 +6,7 @@ const Option = ({text, type, onSelected}) => {
     <div 
       className="option"
       onClick={() => {
-        onSelected()
+        onSelected(type)
       }}
     >
       <Icon type={type} />
