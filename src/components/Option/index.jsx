@@ -1,12 +1,12 @@
 import Icon from '../Icon';
 import './style.css';
 
-const Option = ({text, type}) => {
+const Option = ({text, type, onSelected}) => {
   return (
     <div 
       className="option"
       onClick={() => {
-        console.log('Spíše souhlasím')
+        onSelected()
       }}
     >
       <Icon type={type} />
