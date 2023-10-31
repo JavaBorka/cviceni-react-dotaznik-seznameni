@@ -10,7 +10,7 @@ const Question = ({text}) => {
   return (
     <div className="question">
       <QuestionBody 
-        iconType="symbolQuestion" 
+        iconType={!answered ? 'symbolQuestion' : 'symbolTick' } 
         text={text}
       />
       <div className="question__options">
